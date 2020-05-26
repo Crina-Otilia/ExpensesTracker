@@ -4,7 +4,11 @@ using System.Text;
 
 namespace ExpensesTrackerApp.Core
 {
-    class Income
+    class Income:Account
     {
+        protected override decimal Income(decimal amount)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
