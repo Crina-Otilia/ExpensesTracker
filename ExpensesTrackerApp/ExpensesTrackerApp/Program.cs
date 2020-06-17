@@ -6,9 +6,13 @@ namespace ExpensesTrackerApp
     {
         static void Main(string[] args)
         {
-            Account
+            var account=new Core.Account.Account();
+            account.Deposit(110);
+            account.Withdraw(10);
+
             
-            Console.WriteLine("Hello World!");
+            
+            Console.WriteLine("Incercare.");
         }
     }
 }
