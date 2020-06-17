@@ -2,18 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExpensesTrackerApp.Core
+namespace ExpensesTrackerApp.Core.Account
 {
-    abstract class Account
+     public class Account:IEntity
     {
-        public decimal amount;
-        public decimal income;
-        public decimal expenses;
 
         public decimal Amount { get; private set; }
-        //protected abstract decimal Income (decimal amount){}
-        //protected abstract decimal Expenses (decimal amount){}
-
+        public int Id { get; set; }
         public void Deposit(decimal amount){
             Amount+=amount;
         }

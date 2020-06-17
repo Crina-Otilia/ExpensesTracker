@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExpensesTrackerApp.Core
+namespace ExpensesTrackerApp.Core.Identity
 {
     class User:IEntityBase
     {

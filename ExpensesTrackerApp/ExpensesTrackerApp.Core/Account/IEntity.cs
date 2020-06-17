@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-
 namespace ExpensesTrackerApp.Core.Account
 {
-    public class Expenses:IEntity
+    public interface IEntity
     {
-        public int Id { get; set; }
+        int Id { get; set; }
     }
 }
