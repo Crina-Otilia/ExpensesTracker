@@ -5,7 +5,7 @@ using ExpensesTrackerApp.Core.Account;
 
 namespace ExpensesTrackerApp.Core
 {
-    class Customer:IEntityBase
+    public class Customer:IEntityBase
     {
         public Customer()
         {

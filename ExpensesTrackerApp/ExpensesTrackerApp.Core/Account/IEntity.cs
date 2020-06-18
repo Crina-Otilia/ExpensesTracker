@@ -6,6 +6,12 @@ namespace ExpensesTrackerApp.Core.Account
 {
     public interface IEntity
     {
-        int Id { get; set; }
+        public Guid AccountHolderId { get; set; }
+
+        decimal Amount { get; }
+
+        string Iban { get; set; }
+
+        void Deposit(decimal amount);
     }
 }

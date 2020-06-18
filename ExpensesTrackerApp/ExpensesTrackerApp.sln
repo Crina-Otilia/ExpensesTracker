@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTrackerApp.Core", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTrackerApp.DataAccess", "ExpensesTrackerApp.DataAccess\ExpensesTrackerApp.DataAccess.csproj", "{055486CA-6A7B-4E4D-A3B6-499794099D13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensesTrackerApp.DataAccess.SqlServer", "ExpensesTrackerApp.DataAccess.SqlServer\ExpensesTrackerApp.DataAccess.SqlServer.csproj", "{0517C8E6-ED45-444B-B8E0-3365E013574C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExpensesTrackerApp.DataAccess.SqlServer", "ExpensesTrackerApp.DataAccess.SqlServer\ExpensesTrackerApp.DataAccess.SqlServer.csproj", "{0517C8E6-ED45-444B-B8E0-3365E013574C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D1B2B04-8D73-42F7-97F3-D127C6FB7675}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
