@@ -6,9 +6,9 @@ using ExpensesTrackerApp.Core;
 
 namespace ExpensesTrackerApp.Core.Account
 {
-     public class Account:IEntity
+    public class AccountBase : IEntity
     {
-        public Account()
+        public AccountBase()
         {
             Id = Guid.NewGuid();
         }
@@ -22,15 +22,18 @@ namespace ExpensesTrackerApp.Core.Account
         public decimal Amount { get; protected set; }
 
         public Customer AccountHolder { get; set; }
-        
-        public void Deposit(decimal amount){
-            Amount+=amount;
+
+        public void Deposit(decimal amount)
+        {
+            Amount += amount;
         }
-        public decimal Withdraw(decimal amount){
-            if(Amount<amount){
+        public decimal Withdraw(decimal amount)
+        {
+            if (Amount < amount)
+            {
                 throw new InvalidOperationException("Insufficient funds!");
             }
-            else Amount-=amount;
+            else Amount -= amount;
             return amount;
         }
     }

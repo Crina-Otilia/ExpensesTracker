@@ -26,7 +26,7 @@ namespace ExpensesTrackerApp.DataAccess.SqlServer
             this.connectionString = connectionString;
         }
 
-        public DbSet<Account> DebitAccounts { get; set; }
+        public DbSet<AccountBase> DebitAccounts { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

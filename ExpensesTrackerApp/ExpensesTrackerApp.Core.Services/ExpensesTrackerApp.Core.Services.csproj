@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpensesTrackerApp.Core\ExpensesTrackerApp.Core.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.DataAccess\ExpensesTrackerApp.DataAccess.csproj" />
+  </ItemGroup>
+
+</Project>
