@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExpensesTrackerApp.Core.Identity
 {
-    class User:IEntityBase
+    public class User:IEntityBase
     {
         public Guid Id { get; set; }
 
