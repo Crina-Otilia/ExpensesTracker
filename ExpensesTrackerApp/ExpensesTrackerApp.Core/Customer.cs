@@ -9,7 +9,7 @@ namespace ExpensesTrackerApp.Core
     {
         public Customer()
         {
-            //Income = new List<Income>();
+            Income = new List<Income>();
             Expenses = new List<Expenses>();
         }
 
@@ -23,7 +23,7 @@ namespace ExpensesTrackerApp.Core
 
         public string FullName { get; set; }
 
-        //public virtual IList<Income> Income { get; set; }
+        public virtual IList<Income> Income { get; set; }
 
         public virtual IList<Expenses> Expenses { get; set; }
     }

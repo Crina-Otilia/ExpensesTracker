@@ -7,9 +7,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace ExpensesTrackerApp.DataAccess.SqlServer.Mappings
 {
-        class AccountMapping : IEntityTypeConfiguration<Account>
+        class AccountMapping : IEntityTypeConfiguration<AccountBase>
     {
-        public void Configure(EntityTypeBuilder<Account> builder)
+        public void Configure(EntityTypeBuilder<AccountBase> builder)
         {
             builder.ToTable("Accounts")
                             .HasKey(_ => _.Id);
