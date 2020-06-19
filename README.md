@@ -12,3 +12,6 @@ The database is presented below. We made an image of the created tables that are
 1. Constantly see how much money you have in your account
 1. You can see how much money you spent in a month
 1. You have the option to see which category of expenses is the highest
+
+# A Simple Exemple
+![](images/exemple.gif)
