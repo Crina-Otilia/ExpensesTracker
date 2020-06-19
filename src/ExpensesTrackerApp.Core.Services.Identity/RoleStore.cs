@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace ExpensesTrackerApp.Core.Services.Identity
 {
+    public class RoleStore { }
+
+    /*
     public class RoleStore : IRoleStore<Role>
     {
         private readonly IDataRepository _dataRepository;
@@ -28,11 +31,21 @@ namespace ExpensesTrackerApp.Core.Services.Identity
             return Task.FromResult(IdentityResult.Success);
         }
 
+        public Task CreateAsync(Role role)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<IdentityResult> DeleteAsync(Role role, CancellationToken cancellationToken)
         {
             _dataRepository.Delete(role);
             _unitOfWork.Commit();
             return Task.FromResult(IdentityResult.Success);
+        }
+
+        public Task DeleteAsync(Role role)
+        {
+            throw new NotImplementedException();
         }
 
         public void Dispose()
@@ -47,11 +60,21 @@ namespace ExpensesTrackerApp.Core.Services.Identity
             return Task.FromResult(role);
         }
 
+        public Task<Role> FindByIdAsync(string roleId)
+        {
+            throw new NotImplementedException();
+        }
+
         public Task<Role> FindByNameAsync(string normalizedRoleName, CancellationToken cancellationToken)
         {
             var role = _dataRepository.Query<Role>()
                 .SingleOrDefault(r => r.Name == normalizedRoleName);
             return Task.FromResult(role);
+        }
+
+        public Task<Role> FindByNameAsync(string roleName)
+        {
+            throw new NotImplementedException();
         }
 
         public Task<string> GetNormalizedRoleNameAsync(Role role, CancellationToken cancellationToken)
@@ -90,5 +113,10 @@ namespace ExpensesTrackerApp.Core.Services.Identity
             _unitOfWork.Commit();
             return Task.FromResult(IdentityResult.Success);
         }
-    }
+
+        public Task UpdateAsync(Role role)
+        {
+            throw new NotImplementedException();
+        }
+    }*/
 }

@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity;
 
 namespace ExpensesTrackerApp.Core.Services.Identity
 {
+    public class UserStore { }
+    /*
     public class UserStore : IUserPasswordStore<User>
     {
         private readonly IDataRepository _dataRepository;
@@ -113,4 +115,5 @@ namespace ExpensesTrackerApp.Core.Services.Identity
             return Task.FromResult(IdentityResult.Success);
         }
     }
+    */
 }
