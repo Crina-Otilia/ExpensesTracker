@@ -1,5 +1,6 @@
 # ExpensesTracker
 An application to help people manage money.
+This project was created based on the idea of financial management. As a student, you have to use your money as efficiently as possible to deal with payments, but also to create a comfortable life.
 
 # DataBase
 
