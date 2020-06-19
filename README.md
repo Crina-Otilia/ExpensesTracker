@@ -14,4 +14,4 @@ The database is presented below. We made an image of the created tables that are
 1. You have the option to see which category of expenses is the highest
 
 # A Simple Exemple
-![](images/exemple.gif)
+![](images/exemplu.gif)
