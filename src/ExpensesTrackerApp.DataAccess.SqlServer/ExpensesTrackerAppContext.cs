@@ -20,13 +20,16 @@ namespace ExpensesTrackerApp.DataAccess.SqlServer
         public ExpensesTrackerAppContext()
         {
         }
+        public virtual DbSet<Expenses> ExpensesDB { get; set; }
 
+       
         public ExpensesTrackerAppContext(string connectionString)
         {
             this.connectionString = connectionString;
         }
 
-        public DbSet<AccountBase> DebitAccounts { get; set; }
+        public DbSet<AccountBase> Accounts { get; set; }
+        public object Expenses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

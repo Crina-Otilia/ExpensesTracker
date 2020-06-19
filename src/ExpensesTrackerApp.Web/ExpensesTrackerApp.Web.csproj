@@ -24,10 +24,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Account\Data\" />
-    <Folder Include="Areas\office\Controllers\" />
     <Folder Include="Areas\office\Data\" />
-    <Folder Include="Areas\office\Models\" />
-    <Folder Include="Areas\office\Views\" />
   </ItemGroup>
 
 
