@@ -39,7 +39,7 @@ namespace ExpensesTrackerApp.Web
             services.AddTransient<ExpensesTrackerAppContext>(_ =>
             {
                 var config = _.GetService<IConfiguration>();
-                var connString = config.GetConnectionString("Tap2020");
+                var connString = config.GetConnectionString("ExpensesTrackerApp");
                 return new ExpensesTrackerAppContext(connString);
             });
             services.AddTransient<IDataRepository, DataRepository>();
@@ -58,9 +58,11 @@ namespace ExpensesTrackerApp.Web
                     opt.LogoutPath = "Account/Logout";
                     opt.AccessDeniedPath = "Account/Denied";
                 });
+            /*
             services.AddTransient<IUserStore<User>, UserStore>();
             services.AddTransient<IUserPasswordStore<User>, UserStore>();
             services.AddTransient<IRoleStore<Role>, RoleStore>();
+            */
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
