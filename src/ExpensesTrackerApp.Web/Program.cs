@@ -18,11 +18,7 @@ namespace ExpensesTrackerApp.Web
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration(_ =>
-            {
-                _.AddJsonFile("appsettings.json");
-                _.AddJsonFile("appsettings.Development.json", optional: true);
-            })
+           
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
