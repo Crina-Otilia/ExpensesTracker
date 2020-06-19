@@ -11,12 +11,13 @@ namespace ExpensesTrackerApp.Core.Account
     {
         public int Id { get; set; }
 
-        public Guid AccountHolderId { get; set; }
+        public Guid Name { get; set; }
 
         public string Iban { get; set; }
 
         public decimal Amount { get; protected set; }
 
-        public Customer AccountHolder { get; set; }
+        public DateTime ExpenseDate { get; set; } = DateTime.Now;
+        public string Category { get; set; }
     }
 }
