@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[Income]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL CONSTRAINT PK_Income PRIMARY KEY, 
+    [Name] VARCHAR(50) NOT NULL,
+	[Amount] DECIMAL(18, 2) NOT NULL, 
+	 [Date] DATETIME NOT NULL
+)
+GO
+
+CREATE UNIQUE INDEX [IX_Income_Name] ON [dbo].[Income] ([Name])
