@@ -31,10 +31,10 @@ namespace ExpensesTrackerApp.DataAccess.SqlServer
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            //var connectionString = this.connectionString ?? System.Configuration.ConfigurationManager.ConnectionStrings["ExpensesTrackerApp"].ConnectionString;
+            var connectionString = this.connectionString ?? System.Configuration.ConfigurationManager.ConnectionStrings["ExpensesTrackerApp"].ConnectionString;
             //var connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["ExpensesTrackerApp"].ConnectionString;
-            //optionsBuilder.UseSqlServer(connectionString);
-            optionsBuilder.UseSqlServer(@"Data Source=localhost; Initial Catalog=ExpensesTrackerApp; Integrated Security=True; MultipleActiveResultSets=True");
+            optionsBuilder.UseSqlServer(connectionString);
+            ///optionsBuilder.UseSqlServer(@"Data Source=localhost; Initial Catalog=ExpensesTrackerApp; Integrated Security=True; MultipleActiveResultSets=True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
