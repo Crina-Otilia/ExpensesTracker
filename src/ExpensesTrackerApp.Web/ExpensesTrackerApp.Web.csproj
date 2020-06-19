@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExpensesTrackerApp.Core.Services.Identity\ExpensesTrackerApp.Core.Services.Identity.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.Core.Services\ExpensesTrackerApp.Core.Services.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.Core\ExpensesTrackerApp.Core.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.DataAccess.SqlServer\ExpensesTrackerApp.DataAccess.SqlServer.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.DataAccess\ExpensesTrackerApp.DataAccess.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp\ExpensesTrackerApp.csproj" />
+  </ItemGroup>
+
+
+
+</Project>
