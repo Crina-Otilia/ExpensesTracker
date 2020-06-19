@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ExpensesTrackerApp.Core.Services\ExpensesTrackerApp.Core.Services.csproj" />
     <ProjectReference Include="..\ExpensesTrackerApp.Core\ExpensesTrackerApp.Core.csproj" />
+    <ProjectReference Include="..\ExpensesTrackerApp.DataAccess.SqlServer\ExpensesTrackerApp.DataAccess.SqlServer.csproj" />
     <ProjectReference Include="..\ExpensesTrackerApp.DataAccess\ExpensesTrackerApp.DataAccess.csproj" />
   </ItemGroup>
 

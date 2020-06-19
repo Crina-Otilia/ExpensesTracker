@@ -87,7 +87,8 @@ namespace ExpensesTrackerApp.Web
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
+                endpoints.MapControllerRoute(null,"Account/Login",new { area="Account", controller="Authentication",action="Login"});
+               endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
